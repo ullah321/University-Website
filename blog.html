@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c7137f3b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <img src="images/moon.png" id="icon">
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programmes For 2024</h1>
+    </section>
+
+            <!-- ---Blog Page---- -->
+    <div class="container">
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/certificate.jpg">
+                    <h2>Our Certificate & Online Programmes For 2024</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae ipsa dolorum dolorem asperiores tempora. Maxime, alias tempora libero praesentium assumenda ab vero quam non, quidem aut consectetur beatae reprehenderit atque repellat sunt cupiditate ad quasi enim a tenetur deserunt magnam. Consequatur dignissimos ipsum officia sequi? Similique autem minus odio commodi.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt reiciendis maxime temporibus libero alias saepe repudiandae, natus aliquam aperiam at velit id totam, unde mollitia minima inventore blanditiis nostrum! Quo illo neque eos at in quod quia libero fuga voluptatum deserunt molestias laudantium iure beatae voluptas vel, ducimus vitae inventore asperiores pariatur assumenda consequuntur illum. Tenetur eius magnam harum ullam quos neque voluptas deserunt consequatur ducimus, itaque voluptates tempore architecto deleniti id. Expedita incidunt esse veritatis ullam nam enim nulla.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem adipisci consectetur fuga ipsum pariatur molestias quibusdam omnis voluptas voluptate autem soluta laboriosam tempora tempore qui atque laborum incidunt doloremque magnam praesentium quae, quod quam id officiis. Aut, natus voluptas exercitationem aspernatur repudiandae enim accusantium, sit facere soluta dolores explicabo at illo fuga. Repudiandae doloribus blanditiis, soluta repellat iusto nulla sapiente?</p>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui perspiciatis nemo fugiat est, laudantium provident maxime aliquam quis mollitia inventore reprehenderit. Dicta, ducimus? Suscipit minus sed fuga vero optio voluptatibus reprehenderit, similique modi cumque. Nulla voluptas ullam dolorum quaerat dicta, eaque recusandae molestias explicabo incidunt aliquam harum delectus corporis.</p>
+
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your Comment"> </textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+
+
+                </div>
+                <div class="blog-right">
+                    <h1>Post Categories</h1>
+                    <div>
+                        <span>Business Administration</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Machine Learning</span>
+                        <span>11</span>
+                    </div>
+                    <div>
+                        <span>Software Engineering</span>
+                        <span>18</span>
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>16</span>
+                    </div>
+                    <div>
+                        <span>Information Technology</span>
+                        <span>11</span>
+                    </div>
+                    <div>
+                        <span>Computer Science</span>
+                        <span>12</span>
+                    </div>
+                    <div>
+                        <span>Mechanical Engineering</span>
+                        <span>35</span>
+                    </div>
+                    <div>
+                        <span>Software Development</span>
+                        <span>27</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+            <!--Footer Section-->
+        <section class="footer">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cum perspiciatis officia?<br>Voluptatibus illo inventore atque distinctio! Nesciunt, maiores laborum.</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p>Made With <i class="fa-regular fa-heart"></i> By Ahmad Ullah Ashraf</p>
+        </section>
+    </div>
+
+
+        <!-- -----Javascript for toggle menu----- -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+
+        var icon  = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.png";
+            }else{
+                icon.src = "images/moon.png";
+            }
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>

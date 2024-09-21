@@ -1,0 +1,61 @@
+/*-----css for responsive small screen------*/
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 22px;
+    }
+    .text-box p{
+        font-size: 13px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #f44336;
+        width: 200px;
+        height: 100vh;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav-links .fa-solid{
+        margin: 15px 0 0 15px;
+    }
+    nav .fa-solid{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .nav-links ul{
+        padding: 30px;
+    }
+    .row{
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .facilities-col img:hover{
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+        width: 100%;
+    }
+
+    .testimonial-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    
+    .cta h1{
+        font-size: 23px;
+    }
+    .footer p{
+        margin: 0 10px;
+    }
+    .sub-header h1{
+        font-size: 22px;
+    }
+    
+}
